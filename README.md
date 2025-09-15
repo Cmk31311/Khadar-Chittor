@@ -2,6 +2,8 @@
 
 A modern, high-performance portfolio website built with React, Node.js, and MongoDB. Features a neural network animated background, responsive design, and a full-stack contact system.
 
+🌐 **Live Website**: [https://khadar-chittor-q5qo2l985-cmk31311s-projects.vercel.app](https://khadar-chittor-q5qo2l985-cmk31311s-projects.vercel.app)
+
 ## 🚀 Features
 
 - **Modern React Architecture**: Built with React 18, Vite, and modern ES6+ features
@@ -122,6 +124,8 @@ khadar-portfolio/
 │   │   └── database.js
 │   └── index.js             # Server entry point
 ├── public/                  # Static assets
+├── vercel.json             # Vercel deployment configuration
+├── .vercelignore           # Vercel ignore file
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
@@ -161,24 +165,59 @@ The neural background animation can be customized in:
 
 ## 🚀 Deployment
 
-### Frontend (Vercel/Netlify)
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to your hosting service
-3. Set environment variables for production
+This project is deployed on **Vercel** with full-stack support (frontend + backend).
 
-### Backend (Railway/Heroku/DigitalOcean)
-1. Set up MongoDB Atlas or your preferred database
-2. Configure environment variables
-3. Deploy the server code
-4. Update frontend API URLs to point to your backend
+### Deploy to Vercel
 
-### Environment Variables for Production
+#### Option 1: Vercel CLI (Recommended)
+1. **Install Vercel CLI**:
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Login to Vercel**:
+   ```bash
+   vercel login
+   ```
+
+3. **Deploy**:
+   ```bash
+   vercel --prod
+   ```
+
+#### Option 2: GitHub Integration
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
+3. Import your repository
+4. Vercel will auto-detect the configuration
+
+### Environment Variables Setup
+
+Add these environment variables in Vercel Dashboard → Settings → Environment Variables:
+
 ```env
 NODE_ENV=production
-MONGODB_URI=your-mongodb-atlas-uri
-EMAIL_USER=your-production-email
-EMAIL_PASS=your-production-password
+MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/portfolio?retryWrites=true&w=majority
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-gmail-app-password
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+JWT_SECRET=your-generated-secret-key
 ```
+
+### Getting Environment Variables
+
+1. **MongoDB Atlas**: 
+   - Sign up at [mongodb.com/atlas](https://www.mongodb.com/atlas)
+   - Create a free cluster
+   - Get connection string
+
+2. **Gmail App Password**:
+   - Enable 2FA on Gmail
+   - Generate app password at [myaccount.google.com](https://myaccount.google.com) → Security → App passwords
+
+3. **JWT Secret**:
+   - Generate with: `openssl rand -base64 32`
 
 ## 🔒 Security Features
 
