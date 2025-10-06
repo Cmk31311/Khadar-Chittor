@@ -2,7 +2,7 @@
 
 A modern, high-performance portfolio website built with React, Node.js, and MongoDB. Features a neural network animated background, responsive design, and a full-stack contact system.
 
-🌐 **Live Website**: [https://khadar-chittor-q5qo2l985-cmk31311s-projects.vercel.app](https://khadar-chittor-q5qo2l985-cmk31311s-projects.vercel.app)
+🌐 **Live Website**: https://khadar-chittor.vercel.app/
 
 ## 🚀 Features
 
