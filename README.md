@@ -235,17 +235,6 @@ JWT_SECRET=your-generated-secret-key
 - **Caching**: Browser and server-side caching
 - **Compression**: Gzip compression for assets
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit changes: `git commit -am 'Add feature'`
-4. Push to branch: `git push origin feature-name`
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 📞 Contact
 
