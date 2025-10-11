@@ -5,32 +5,32 @@ const Skills = () => {
     {
       icon: '💻',
       title: 'Programming Languages',
-      skills: 'Python, TypeScript, JavaScript (ES6+)'
+      skills: 'Python, TypeScript, JavaScript (ES6+), C#, SQL, HTML, CSS (SASS/SCSS)'
     },
     {
       icon: '⚙️',
       title: 'Backend, APIs & Databases',
-      skills: 'Django, DRF, FastAPI, Node.js, REST, GraphQL, PostgreSQL, SQL Server'
+      skills: 'Django, DRF, FastAPI, Flask, Node.js, REST, GraphQL, PostgreSQL, SQL Server, Oracle, API integration (Postman)'
     },
     {
       icon: '⚛️',
       title: 'Frontend',
-      skills: 'React, Next.js, HTML5, CSS3, Material UI, Responsive Design, Accessibility (WCAG 2.1 AA)'
+      skills: ' React, Next.js, React Native, Tailwind CSS, responsive design, accessibility, state management (Redux / Context API)'
     },
     {
       icon: '🤖',
       title: 'GenAI',
-      skills: 'RAG & embeddings, function/tool calling, LangChain, pgvector, OpenAI & Google GenAI APIs, safety/guardrails, text-to-speech'
+      skills: 'RAG pipelines, embeddings, LangChain, OpenAI / Google GenAI APIs, vector databases (pgvector), safety & guardrails'
     },
     {
       icon: '☁️',
       title: 'Cloud, DevOps & Automation',
-      skills: 'AWS (EC2, S3, Lambda, RDS), Docker, Terraform, Jenkins, Git, CI/CD, Vercel, Google Apps Script, ServiceNow'
+      skills: 'AWS (EC2, S3, Lambda, RDS), Docker, Terraform, Jenkins, CI/CD, Vercel, Kubernetes, GitLab CI, GitHub Actions, Vercel'
     },
     {
       icon: '🧪',
-      title: 'Testing',
-      skills: 'Jest, React Testing Library, Cypress, Postman'
+      title: 'ML & Data',
+      skills: 'Pandas, NumPy, scikit-learn, NLTK, data preprocessing, analytics dashboards, model evaluation'
     }
   ]
 
@@ -68,30 +68,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        {/* Additional Info */}
-        <div className="mt-16 text-center">
-          <div className="card max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 neural-gradient">
-              Continuous Learning
-            </h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Technology evolves rapidly, and so do I. I'm always exploring new frameworks, tools, and methodologies 
-              to stay current with industry best practices and deliver cutting-edge solutions.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm">
-                Always Learning
-              </span>
-              <span className="px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-full text-sm">
-                Industry Best Practices
-              </span>
-              <span className="px-4 py-2 bg-gradient-to-r from-pink-500/20 to-cyan-500/20 border border-pink-500/30 rounded-full text-sm">
-                Cutting-Edge Solutions
-              </span>
-            </div>
-          </div>
         </div>
       </div>
     </section>

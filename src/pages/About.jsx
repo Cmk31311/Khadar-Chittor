@@ -4,23 +4,23 @@ const About = () => {
   const highlights = [
     {
       icon: '🌟',
-      title: 'Learning & Innovation',
+      title: 'Upgrading My Neural Network',
       description: 'Outside of coding, you\'ll usually find me learning something new (currently geeking out on 🤖 GenAI), or exploring ways technology can inspire creativity.'
     },
     {
       icon: '💡',
-      title: 'Philosophy',
-      description: 'I believe in building not just for functionality, but for people - making tools that feel intuitive, welcoming, and genuinely useful.'
+      title: 'How I Function()',
+      description: 'I write code the way I make coffee - strong, slightly chaotic, but it gets the job done.'
     },
     {
       icon: '🚀',
-      title: 'Tech Stack',
-      description: 'Python, Next.js, React, GenAI, ML, Cloud deployment, and always exploring new technologies to stay ahead of the curve.'
+      title: 'My Tech Inventory',
+      description: 'Python, Next.js, React, GenAI, ML, Tailwind CSS, Cloud deployment, and always exploring new technologies to stay ahead of the curve.'
     },
     {
       icon: '🤝',
-      title: 'Let\'s Connect!',
-      description: 'If you\'d like to collaborate, brainstorm, or just chat about tech, coffee, or cool project ideas, let\'s connect! 👇'
+      title: 'Ping Me IRL (aka Let\'s Connect!)',
+      description: 'When I’m not building or breaking things, I’m probably sipping coffee or diving into a new tech rabbit hole. Always down to collaborate, brainstorm, or geek out over cool ideas — let’s make something awesome together.👇'
     }
   ]
 
@@ -33,7 +33,7 @@ const About = () => {
         {/* About Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h3 className="text-4xl font-bold mb-4 neural-gradient hover:scale-105 transition-transform duration-300">
-            Hi, I'm Khadar Chittor
+            Hello!, I'm Khadar Chittor
           </h3>
           <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
             I'm a developer who loves turning ideas into interactive, real-world apps. From building interactive web apps to creating{' '}
@@ -50,10 +50,10 @@ const About = () => {
               <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-full flex items-center justify-center text-2xl opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 hover-rotate">
                 💻
               </div>
-              <h4 className="text-2xl font-bold mb-4 neural-gradient group-hover:neural-glow-text transition-all duration-300">My Journey</h4>
+              <h4 className="text-2xl font-bold mb-4 neural-gradient group-hover:neural-glow-text transition-all duration-300">The Origin Story (No Superpowers Yet)</h4>
               <p className="text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300">
-                I began my career at HCL Tech as a Software engineer, where I worked on enterprise solutions for largest bank in Australia, 
-                and now I'm an IT Student Tech Lead at CSUF, guiding student projects and supporting systems while sharpening my own skills along the way.
+              I kicked off my career at HCL Tech, building enterprise tools for one of Australia’s biggest banks. 
+              These days, I’m an IT Student Lead at CSUF, leading student teams, keeping tech running, and constantly leveling up my skills like it’s a side quest.
               </p>
               
               {/* Animated corner accent */}

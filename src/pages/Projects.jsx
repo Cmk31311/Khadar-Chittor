@@ -3,12 +3,32 @@ import React from 'react'
 const Projects = () => {
   const projects = [
     {
+      title: 'AI_Baseline_Map',
+      description: 'Built for the Baseline Tooling Hackathon by Google Chrome, this comprehensive monorepo includes multiple tools for visualizing, analyzing, and working with Baseline web features - featuring a web app, VS Code extension, ESLint plugin, and AI-powered code analyzer.',
+      tech: 'Next.js 15 (React 19, TypeScript, Tailwind CSS) | Data: web-features npm, Groq SDK, Papa Parse | Tools: ESLint, Jest, npm | Extensions: VS Code, CLI (Node.js + tsx).',
+      link: 'https://ai-baseline-map.vercel.app/',
+      icon: 'AI_Baseline_Map',
+      gradient: 'from-yellow-400 to-amber-600',
+      status: 'Live',
+      category: 'AI Project'
+    },
+    {
+      title: 'Gen-Aistro',
+      description: 'Built in 36 hours for the NASA Space Apps Challenge Hackathon, Gen-Aistro is a production-ready RAG dashboard for exploring NASA Space Biology research using preprocessed and client-side embeddings, serverless retrieval, and Groq\'s llama-3.3-70b-versatile model for fast, accurate answers.',
+      tech: 'Next.js (React, Tailwind CSS) | Serverless API on Vercel | Groq LLaMA-3.3-70B | Python preprocessing (BeautifulSoup, PyPDF2) | JSON-based embeddings & retrieval | Node.js + npm',
+      link: 'https://gen-aistro.vercel.app/',
+      icon: 'Gen-Aistro',
+      gradient: 'from-blue-500 to-purple-600',
+      status: 'Live',
+      category: 'AI Project'
+    },
+    {
       title: 'TaFlo: Task & Flow Dashboard',
       description: 'Next.js (TS) dashboard to capture and track work from intake to done. Reusable components + predictable state, bulk multi-select actions, and Vercel previews for fast, safe releases.',
       tech: 'Next.js (TypeScript), React, Tailwindcss, Vercel, Supabase, React state patterns (hooks/context)',
       link: 'https://ta-flo.vercel.app/',
       icon: 'TaFlo',
-      gradient: 'from-blue-500 to-purple-600',
+      gradient: 'from-blue-500 to-white-600',
       status: 'Live',
       category: 'Web App'
     },
@@ -18,8 +38,8 @@ const Projects = () => {
       tech: 'LLM API, embeddings + vector search, content-safety/guardrail middleware, text-to-speech, prompt orchestration',
       link: 'https://ai-personal-motivator-and-quote-generator.streamlit.app/',
       icon: 'AI Motivator',
-      gradient: 'from-purple-500 to-pink-600',
-      decorations: ['🤖', '💡'],
+      gradient: 'from-purple-500 to-green-600',
+      //decorations: ['🤖', '💡'],
       status: 'Live',
       category: 'AI Tool'
     },
@@ -29,8 +49,8 @@ const Projects = () => {
       tech: 'Document parsers (PDF/DOCX/TXT), Gemini-powered generation (optional), offline/local generation mode, quiz/flashcard UI, JSON import/export utilities',
       link: 'https://ai-flashcard-maker.streamlit.app/',
       icon: 'AI FlashCard Maker',
-      gradient: 'from-green-500 to-blue-600',
-      decorations: ['📚', '🤖'],
+      gradient: 'from-amber-500 to-blue-600',
+      //decorations: ['📚', '🤖'],
       status: 'Live',
       category: 'AI Tool'
     }
@@ -89,35 +109,41 @@ const Projects = () => {
                   </h3>
                 </div>
                 
-                <p className="text-white/80 leading-relaxed group-hover:text-white/90 transition-colors duration-300">
-                  {project.description}
-                </p>
-                
-                <div className="space-y-2">
-                  <p className="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300">Tech Stack:</p>
-                  <p className="text-sm text-white/70 leading-relaxed group-hover:text-white/80 transition-colors duration-300">
-                    {project.tech}
+                {project.description && (
+                  <p className="text-white/80 leading-relaxed group-hover:text-white/90 transition-colors duration-300">
+                    {project.description}
                   </p>
-                </div>
+                )}
                 
-                <div className="flex items-center justify-between pt-2">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group/link inline-flex items-center text-white font-semibold border-b-2 border-transparent hover:border-cyan-400 transition-all duration-300 hover:text-cyan-400"
-                  >
-                    <span>View Project</span>
-                    <span className="ml-2 group-hover/link:translate-x-1 transition-transform duration-300">→</span>
-                  </a>
-                  
-                  {/* External link icon */}
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
+                {project.tech && (
+                  <div className="space-y-2">
+                    <p className="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300">Tech Stack:</p>
+                    <p className="text-sm text-white/70 leading-relaxed group-hover:text-white/80 transition-colors duration-300">
+                      {project.tech}
+                    </p>
                   </div>
-                </div>
+                )}
+                
+                {project.link && (
+                  <div className="flex items-center justify-between pt-2">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group/link inline-flex items-center text-white font-semibold border-b-2 border-transparent hover:border-cyan-400 transition-all duration-300 hover:text-cyan-400"
+                    >
+                      <span>View Project</span>
+                      <span className="ml-2 group-hover/link:translate-x-1 transition-transform duration-300">→</span>
+                    </a>
+                    
+                    {/* External link icon */}
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                  </div>
+                )}
               </div>
               
               {/* Corner accent */}
