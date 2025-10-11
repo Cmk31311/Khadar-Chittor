@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center text-center px-4 relative z-10">
-      <div className="max-w-4xl mx-auto animate-fade-in">
+      <div className="max-w-4xl mx-auto animate-fade-in relative">
         {/* Hero Title */}
         <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 neural-gradient neural-glow-text cursor-pointer hover:scale-105 transition-transform duration-300">
           Khadar Chittor
@@ -91,13 +91,6 @@ const Home = () => {
             <div className="absolute top-2 left-2 w-2 h-2 border-l-2 border-t-2 border-blue-400/60 group-hover:border-blue-300/80 transition-all duration-500"></div>
             <div className="absolute bottom-2 right-2 w-2 h-2 border-r-2 border-b-2 border-blue-400/60 group-hover:border-blue-300/80 transition-all duration-500"></div>
           </a>
-        </div>
-        
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
-          </div>
         </div>
       </div>
     </section>

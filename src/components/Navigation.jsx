@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import OnekoCat from './OnekoCat'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -176,6 +177,9 @@ const Navigation = () => {
           </div>
         </div>
       </div>
+      
+      {/* Oneko Cat positioned beside the name in navigation */}
+      <OnekoCat />
     </nav>
   )
 }
