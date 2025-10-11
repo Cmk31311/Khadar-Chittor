@@ -94,15 +94,16 @@ const Navigation = () => {
             ))}
             
             {/* Resume Button */}
-            <button 
-              onClick={() => window.open('/resume.pdf', '_blank')}
-              className="group relative px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-400/30 rounded-lg text-white hover:from-cyan-500/30 hover:to-purple-500/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20"
+            <a 
+              href="/Khadar-Chittor-Resume.pdf"
+              download="Khadar-Chittor-Resume.pdf"
+              className="group relative px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-400/30 rounded-lg text-white hover:from-cyan-500/30 hover:to-purple-500/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 inline-block"
             >
               <span className="flex items-center space-x-2">
                 <span className="text-sm group-hover:scale-110 transition-transform duration-300">📄</span>
                 <span className="font-medium">Resume</span>
               </span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -163,16 +164,15 @@ const Navigation = () => {
               ))}
               
               {/* Mobile Resume Button */}
-              <button 
-                onClick={() => {
-                  window.open('/resume.pdf', '_blank')
-                  setIsMobileMenuOpen(false)
-                }}
+              <a 
+                href="/Khadar-Chittor-Resume.pdf"
+                download="Khadar-Chittor-Resume.pdf"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="group flex items-center space-x-3 w-full px-4 py-3 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-400/30 rounded-lg text-white hover:from-cyan-500/30 hover:to-purple-500/30 transition-all duration-300 mt-4"
               >
                 <span className="text-lg group-hover:scale-110 transition-transform duration-300">📄</span>
                 <span className="font-medium">Resume</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

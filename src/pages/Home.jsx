@@ -16,6 +16,10 @@ const Home = () => {
             ☕
           </span>{' '}
           caffeine.
+          <br />
+          <span className="text-sm md:text-base text-white/90 hover:text-white transition-all duration-300">
+            P.S: Click the Cat Above!
+          </span>
         </p>
         
         {/* CTA Button */}
